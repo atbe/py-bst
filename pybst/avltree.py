@@ -17,7 +17,7 @@
 # along with PyBST.  If not, see <http://www.gnu.org/licenses/>.
 
 import collections
-import bstree
+import pybst.bstree as bstree
 
 Node = bstree.Node
 BSTree = bstree.BSTree
@@ -136,7 +136,7 @@ class AVLTree(BSTree):
         a new Node with key attribute key and value attribute
         value into T. Balances if necessary.
         """
-        if not isinstance(key,(int,long,float)):
+        if not isinstance(key,(int,float)):
             raise TypeError(str(key) + " is not a number")
         else:
             if not self.Root:

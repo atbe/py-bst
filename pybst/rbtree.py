@@ -343,7 +343,7 @@ class RBTree(BSTree):
         Note: For more information on the cases to be considered for insertion,
         see: http://en.wikipedia.org/wiki/Red-black_tree
         """
-        if not isinstance(key,(int,long,float)):
+        if not isinstance(key,(int,float)):
             raise TypeError(str(key) + " is not a number")
         else:
             if not self.Root:
